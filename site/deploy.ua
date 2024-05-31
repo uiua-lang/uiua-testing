@@ -2,6 +2,9 @@
 
 ¬∊ □"resume" &args
 ⍥(
+  ✅&runi {"git" "fetch" "upstream"}
+  ✅&runi {"git" "rebase" "upstream/new-pad"}
+  ✅&runi {"git" "push" "-f"}
   ✅&runi {"git" "checkout" "site" "--"}
   ✅&runi {"git" "reset" "--hard" "origin/site"}
   ✅&runi {"git" "rebase" "main"}
